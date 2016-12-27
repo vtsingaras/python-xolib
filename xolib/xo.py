@@ -4,7 +4,7 @@ import six
 import json
 import uuid
 import time
-from utils import patch_method_in, render_function
+from .utils import patch_method_in, render_function
 
 
 class XoError(Exception):

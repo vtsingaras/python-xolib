@@ -1,3 +1,4 @@
 v0.1.0, 11 Aug 2016 -- Initial release.
 v0.2.0, 27 Dec 2016 -- Auto discover xo-server methods as class methods and cosmetic fixups.
 v0.2.2, 27 Dec 2016 -- Fix import error.
+v0.2.3, 27 Dec 2016 -- REALLY fix that import error.

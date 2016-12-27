@@ -4,7 +4,7 @@ import six
 import json
 import uuid
 import time
-import utils
+from utils import patch_method_in, render_function
 
 
 class XoError(Exception):
@@ -75,8 +75,8 @@ class xo:
         xoa_methods = self.call('system.getMethodsInfo')
         methods = list()
         for xoa_method_name, xoa_method_info in six.iteritems(xoa_methods):
-            method_code = utils.render_function(xoa_method_name, xoa_method_info['params'])
+            method_code = render_function(xoa_method_name, xoa_method_info['params'])
             methods.append(method_code)
         for method_code in methods:
-            utils.patch_method_in(self, method_code)
+            patch_method_in(self, method_code)
         return methods

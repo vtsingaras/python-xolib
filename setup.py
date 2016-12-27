@@ -2,11 +2,12 @@ from setuptools import setup
 
 setup(
     name='xolib',
-    version='0.2.0',
+    version='0.2.1',
     author='Vyronas Tsingaras',
     author_email='vyronas@vtsingaras.me',
     packages=['xolib'],
-    url='http://pypi.python.org/pypi/xolib/',
+    url='https://github.com/vtsingaras/python-xolib',
+    download_url='https://github.com/vtsingaras/python-xolib/archive/v0.2.1.tar.gz',
     license='LICENSE.txt',
     description='Helper library for interfacing with xo-server.',
     long_description=open('README.rst').read(),
